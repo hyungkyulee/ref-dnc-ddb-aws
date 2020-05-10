@@ -24,6 +24,7 @@ AWS :
 - Key model : Composite primary key
 - Partition Key(var: <Guid>UserId) - GUID for a user
 - Sort Key(var: <string>InvoiceKey) - Unique Invoice Name (= GUID + ItemName)
+  * role as a sencondary index
 - Invoice Date(var: <string>InvoiceDate) - Date of invoice of expense
 - Payment Date(var: <string>PaymentDate) - Date of payment for remittance
 - Remittance Status(var: <string>FinanceStatus) - Status of Process (e.g. Requested, Processing, Paid)
