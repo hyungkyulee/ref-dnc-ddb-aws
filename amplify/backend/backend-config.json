@@ -1,0 +1,10 @@
+{
+	"auth": {
+		"dexpensys997ed4bb": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	}
+}
