@@ -48,5 +48,6 @@ npx create-react-app ./
 
 Dependancy / Packages
 ```
-
+npm i d3-scale formik prop-types react-c3js react-google-maps react-router react-router-dom react-simple-maps react-syntax-highlighter refractor tabler-react --save
 ```
+
