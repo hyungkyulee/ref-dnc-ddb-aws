@@ -1,0 +1,12 @@
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/amplify/backend/function/dexpensyslambda/src/bin/Debug/netcoreapp3.1/dexpensyslambda.deps.json
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/amplify/backend/function/dexpensyslambda/src/bin/Debug/netcoreapp3.1/dexpensyslambda.runtimeconfig.json
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/amplify/backend/function/dexpensyslambda/src/bin/Debug/netcoreapp3.1/dexpensyslambda.runtimeconfig.dev.json
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/amplify/backend/function/dexpensyslambda/src/bin/Debug/netcoreapp3.1/dexpensyslambda.dll
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/amplify/backend/function/dexpensyslambda/src/bin/Debug/netcoreapp3.1/dexpensyslambda.pdb
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/amplify/backend/function/dexpensyslambda/src/obj/Debug/netcoreapp3.1/dexpensyslambda.csprojAssemblyReference.cache
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/amplify/backend/function/dexpensyslambda/src/obj/Debug/netcoreapp3.1/dexpensyslambda.csproj.CoreCompileInputs.cache
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/amplify/backend/function/dexpensyslambda/src/obj/Debug/netcoreapp3.1/dexpensyslambda.AssemblyInfoInputs.cache
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/amplify/backend/function/dexpensyslambda/src/obj/Debug/netcoreapp3.1/dexpensyslambda.AssemblyInfo.cs
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/amplify/backend/function/dexpensyslambda/src/obj/Debug/netcoreapp3.1/dexpensyslambda.dll
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/amplify/backend/function/dexpensyslambda/src/obj/Debug/netcoreapp3.1/dexpensyslambda.pdb
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/amplify/backend/function/dexpensyslambda/src/obj/Debug/netcoreapp3.1/dexpensyslambda.genruntimeconfig.cache

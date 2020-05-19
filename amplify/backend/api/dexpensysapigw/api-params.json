@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/expenses",
+            "lambdaFunction": "dexpensyslambda",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "dexpensysapigw",
+    "apiName": "dexpensysapigw",
+    "functionArns": [
+        {
+            "lambdaFunction": "dexpensyslambda"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-dexpensys-dev-233343-authRole",
+        "unAuthRoleName": "amplify-dexpensys-dev-233343-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "dexpensyslambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
