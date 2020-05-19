@@ -99,10 +99,7 @@ Using service: Cognito, provided by: awscloudformation
  How do you want users to be able to sign in? Username
  Do you want to configure advanced settings? No, I am done.
 Successfully added resource dnderp03cd1a97 locally
-```
 
-5) Add the modules (API)
-```
 (albert) ~/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws $ amplify status
 Scanning for plugins...
 Plugin scan successful
@@ -112,8 +109,10 @@ Current Environment: dev
 | Category | Resource name     | Operation | Provider plugin   |
 | -------- | ----------------- | --------- | ----------------- |
 | Auth     | dexpensys997ed4bb | Create    | awscloudformation |
+```
 
-
+5) Add the modules (API)
+```
 (albert) ~/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws $ amplify api add
 ? Please select from one of the below mentioned services: REST
 ? Provide a friendly name for your resource to be used as a label for this category in the project: dexpensysapigw
@@ -134,5 +133,48 @@ Successfully added resource dexpensysapigw locally
 Some next steps:
 "amplify push" will build all your local backend resources and provision it in the cloud
 "amplify publish" will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
+
+(albert) ~/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws $ amplify status
+
+Current Environment: dev
+
+| Category | Resource name     | Operation | Provider plugin   |
+| -------- | ----------------- | --------- | ----------------- |
+| Auth     | dexpensys997ed4bb | Create    | awscloudformation |
+| Function | dexpensyslambda   | Create    | awscloudformation |
+| Api      | dexpensysapigw    | Create    | awscloudformation |
 ```
+
+6) (albert) ~/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws $ amplify push
+✔ Successfully pulled backend environment dev from the cloud.
+
+Current Environment: dev
+
+| Category | Resource name     | Operation | Provider plugin   |
+| -------- | ----------------- | --------- | ----------------- |
+| Auth     | dexpensys997ed4bb | Create    | awscloudformation |
+| Function | dexpensyslambda   | Create    | awscloudformation |
+| Api      | dexpensysapigw    | Create    | awscloudformation |
+? Are you sure you want to continue? Yes
+⠸ Updating resources in the cloud. This may take a few minutes...
+
+:
+
+UPDATE_COMPLETE amplify-dexpensys-dev-233343 AWS::CloudFormation::Stack Tue May 19 2020 23:40:40 GMT+0100 (British Summer Time) 
+✔ All resources are updated in the cloud
+
+(albert) ~/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws $ amplify status
+
+Current Environment: dev
+
+| Category | Resource name     | Operation | Provider plugin   |
+| -------- | ----------------- | --------- | ----------------- |
+| Auth     | dexpensys997ed4bb | No Change | awscloudformation |
+| Function | dexpensyslambda   | No Change | awscloudformation |
+| Api      | dexpensysapigw    | No Change | awscloudformation |
+```
+
+7) Check the deployment on AWS
+ - Go to AWS Console -> Cognito, API Gateway, Lambda
+ 
 
