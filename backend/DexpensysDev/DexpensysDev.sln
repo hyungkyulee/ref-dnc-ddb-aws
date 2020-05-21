@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DexpensysDev", "DexpensysDev\DexpensysDev.csproj", "{4A38BD01-207A-4F0A-82B5-DF957C150C49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DexpensysDev.Libs", "DexpensysDev.Libs\DexpensysDev.Libs.csproj", "{A2866B7D-E692-4379-B0F7-3238B11ED01A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DexpensysDev.Contracts", "DexpensysDev.Contracts\DexpensysDev.Contracts.csproj", "{0573B695-34A5-4959-BDD2-88AD3B0A204D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{4A38BD01-207A-4F0A-82B5-DF957C150C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A38BD01-207A-4F0A-82B5-DF957C150C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A38BD01-207A-4F0A-82B5-DF957C150C49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2866B7D-E692-4379-B0F7-3238B11ED01A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2866B7D-E692-4379-B0F7-3238B11ED01A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2866B7D-E692-4379-B0F7-3238B11ED01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2866B7D-E692-4379-B0F7-3238B11ED01A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0573B695-34A5-4959-BDD2-88AD3B0A204D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0573B695-34A5-4959-BDD2-88AD3B0A204D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0573B695-34A5-4959-BDD2-88AD3B0A204D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0573B695-34A5-4959-BDD2-88AD3B0A204D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
