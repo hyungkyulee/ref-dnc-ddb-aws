@@ -145,7 +145,9 @@ Current Environment: dev
 | Api      | dexpensysapigw    | Create    | awscloudformation |
 ```
 
-6) (albert) ~/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws $ amplify push
+6) Deploy to AWS
+```
+(albert) ~/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws $ amplify push
 ✔ Successfully pulled backend environment dev from the cloud.
 
 Current Environment: dev
