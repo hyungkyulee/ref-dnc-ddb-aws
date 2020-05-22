@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "i2WnwXJsjaWcM9+B5nvRodPBdgXdubZuZSUeFAN1OLvPY8Z7/iRsld4UMkjIjVvFDZ/TMdXvvBAvCMyXAv6bhA==",
+  "dgSpecHash": "Jp5Kb97+a1jU0dolhjgQHuO4BTx9oJI6D7VygtneQdcBi9MluqDlfx2Hu+zcWHwk4C+yT3DCCdHvH/9Rl+R2VQ==",
   "success": true,
   "projectFilePath": "/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Libs/DexpensysDev.Libs.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/albert/.nuget/packages/awssdk.core/3.3.106.27/awssdk.core.3.3.106.27.nupkg.sha512",
+    "/Users/albert/.nuget/packages/awssdk.dynamodbv2/3.3.106.7/awssdk.dynamodbv2.3.3.106.7.nupkg.sha512"
+  ],
   "logs": []
 }

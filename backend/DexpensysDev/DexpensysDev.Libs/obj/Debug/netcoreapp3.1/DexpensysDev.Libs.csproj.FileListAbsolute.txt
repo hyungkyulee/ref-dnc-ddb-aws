@@ -1,0 +1,9 @@
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Libs/bin/Debug/netcoreapp3.1/DexpensysDev.Libs.deps.json
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Libs/bin/Debug/netcoreapp3.1/DexpensysDev.Libs.dll
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Libs/bin/Debug/netcoreapp3.1/DexpensysDev.Libs.pdb
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Libs/obj/Debug/netcoreapp3.1/DexpensysDev.Libs.csprojAssemblyReference.cache
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Libs/obj/Debug/netcoreapp3.1/DexpensysDev.Libs.csproj.CoreCompileInputs.cache
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Libs/obj/Debug/netcoreapp3.1/DexpensysDev.Libs.AssemblyInfoInputs.cache
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Libs/obj/Debug/netcoreapp3.1/DexpensysDev.Libs.AssemblyInfo.cs
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Libs/obj/Debug/netcoreapp3.1/DexpensysDev.Libs.dll
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Libs/obj/Debug/netcoreapp3.1/DexpensysDev.Libs.pdb

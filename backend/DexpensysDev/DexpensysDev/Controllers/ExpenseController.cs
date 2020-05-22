@@ -5,9 +5,9 @@ namespace DexpensysDev.Controllers
   public class ExpenseController : Controller
   {
     // GET
-    public IActionResult Index()
-    {
-      // return View();
-    }
+    // public IActionResult Index()
+    // {
+    //   // return View();
+    // }
   }
 }

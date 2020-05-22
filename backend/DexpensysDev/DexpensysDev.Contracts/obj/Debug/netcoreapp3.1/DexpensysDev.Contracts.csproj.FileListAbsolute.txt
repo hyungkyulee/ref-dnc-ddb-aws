@@ -1,0 +1,9 @@
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Contracts/bin/Debug/netcoreapp3.1/DexpensysDev.Contracts.deps.json
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Contracts/bin/Debug/netcoreapp3.1/DexpensysDev.Contracts.dll
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Contracts/bin/Debug/netcoreapp3.1/DexpensysDev.Contracts.pdb
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Contracts/obj/Debug/netcoreapp3.1/DexpensysDev.Contracts.csprojAssemblyReference.cache
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Contracts/obj/Debug/netcoreapp3.1/DexpensysDev.Contracts.csproj.CoreCompileInputs.cache
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Contracts/obj/Debug/netcoreapp3.1/DexpensysDev.Contracts.AssemblyInfoInputs.cache
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Contracts/obj/Debug/netcoreapp3.1/DexpensysDev.Contracts.AssemblyInfo.cs
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Contracts/obj/Debug/netcoreapp3.1/DexpensysDev.Contracts.dll
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Contracts/obj/Debug/netcoreapp3.1/DexpensysDev.Contracts.pdb
