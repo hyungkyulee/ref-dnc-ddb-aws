@@ -8,14 +8,17 @@ namespace DexpensysDev.Libs.Mappers
 {
   public class Mapper : IMapper
   {
-    public IEnumerable<ExpensesResponse> ToExpenseContract(IEnumerable<ExpenseDb> items)
+    public IEnumerable<ExpenseResponse> ToExpenseContract(IEnumerable<ExpenseDb> items)
     {
       return items.Select(ToExpenseContract);
     }
 
-    public ExpensesResponse ToExpenseContract(ExpenseDb expense)
+    public ExpenseResponse ToExpenseContract(ExpenseDb expense)
     {
-      
+      return new ExpenseResponse
+      {
+        
+      }
     }
   }
 }

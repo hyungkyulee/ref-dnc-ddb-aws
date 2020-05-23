@@ -18,7 +18,7 @@ namespace DexpensysDev.Services
       _mapper = _mapper;
     }
 
-    public async Task<IEnumerable<ExpensesResponse>> GetAllItemsFromDatabase()
+    public async Task<IEnumerable<ExpenseResponse>> GetAllItemsFromDatabase()
     {
       var response = await _expenseRepository.GetAllItems();
       return _mapper.ToExpenseContract(response);

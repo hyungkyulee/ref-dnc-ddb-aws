@@ -17,7 +17,7 @@ namespace DexpensysDev.Controllers
     }
 
     [HttpGet]
-    public async Task<IEnumerable<ExpensesResponse>> GetAllItemsFromDatabase()
+    public async Task<IEnumerable<ExpenseResponse>> GetAllItemsFromDatabase()
     {
       var results = await _expenseService.GetAllItemsFromDatabase();
       return results;

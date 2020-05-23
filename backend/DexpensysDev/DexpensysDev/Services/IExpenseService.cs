@@ -6,6 +6,6 @@ namespace DexpensysDev.Services
 {
   public interface IExpenseService
   {
-    Task<IEnumerable<ExpensesResponse>> GetAllItemsFromDatabase();
+    Task<IEnumerable<ExpenseResponse>> GetAllItemsFromDatabase();
   }
 }

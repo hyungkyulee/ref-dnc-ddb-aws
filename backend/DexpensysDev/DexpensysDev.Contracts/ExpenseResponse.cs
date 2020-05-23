@@ -1,6 +1,6 @@
 namespace DexpensysDev.Contracts
 {
-  public class ExpensesResponse
+  public class ExpenseResponse
   {
     public string InvoiceKey { get; set; }
     
