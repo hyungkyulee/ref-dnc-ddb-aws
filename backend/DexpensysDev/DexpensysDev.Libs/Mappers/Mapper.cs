@@ -17,8 +17,15 @@ namespace DexpensysDev.Libs.Mappers
     {
       return new ExpenseResponse
       {
-        
-      }
+        InvoiceKey = expense.InvoiceKey,
+        PaymentDate = expense.PaymentDate,
+        FinanceStatus = expense.FinanceStatus,
+        CurrencyCode = expense.CurrencyCode,
+        Amount = expense.Amount,
+        InvoiceCategory = expense.InvoiceCategory,
+        BudgetType = expense.BudgetType,
+        Remarks = expense.Remarks
+      };
     }
   }
 }
