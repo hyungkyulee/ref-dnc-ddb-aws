@@ -179,4 +179,7 @@ Current Environment: dev
 7) Check the deployment on AWS
  - Go to AWS Console -> Cognito, API Gateway, Lambda
  
-
+#### .NET Core SDK for DynamoDB 
+1) Installation / Basic Setup
+- NuGet Packages -> awssdk.dynamodbv2 -> install the package to Main Project(e.g. DexpensysDev) and Libs Project(e.g. DexpensysDev.Libs)
+- NeGet Packages -> awssdk.extensions.netcore.setup -> install this to Main Project
