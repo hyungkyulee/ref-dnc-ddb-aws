@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v3.1": {
       "DexpensysDev.Libs/1.0.0": {
         "dependencies": {
-          "AWSSDK.DynamoDBv2": "3.3.106.7"
+          "AWSSDK.DynamoDBv2": "3.3.106.7",
+          "DexpensysDev.Contracts": "1.0.0"
         },
         "runtime": {
           "DexpensysDev.Libs.dll": {}
@@ -32,6 +33,11 @@
             "fileVersion": "3.3.106.7"
           }
         }
+      },
+      "DexpensysDev.Contracts/1.0.0": {
+        "runtime": {
+          "DexpensysDev.Contracts.dll": {}
+        }
       }
     }
   },
@@ -54,6 +60,11 @@
       "sha512": "sha512-vX+fWo85XJVUrxNBBpsVTWe1P4siUcSL7WopTyfgldie0v4k2ngQ5QcThFlhWmvd34YtJDDtCuMAbQF9X4YE9A==",
       "path": "awssdk.dynamodbv2/3.3.106.7",
       "hashPath": "awssdk.dynamodbv2.3.3.106.7.nupkg.sha512"
+    },
+    "DexpensysDev.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

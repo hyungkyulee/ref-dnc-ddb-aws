@@ -26,6 +26,8 @@
         "dependencies": {
           "AWSSDK.DynamoDBv2": "3.3.106.7",
           "AWSSDK.Extensions.NETCore.Setup": "3.3.101",
+          "DexpensysDev.Contracts": "1.0.0",
+          "DexpensysDev.Libs": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -371,6 +373,26 @@
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.4.0": {},
+      "DexpensysDev.Contracts/1.0.0": {
+        "runtime": {
+          "DexpensysDev.Contracts.dll": {}
+        },
+        "compile": {
+          "DexpensysDev.Contracts.dll": {}
+        }
+      },
+      "DexpensysDev.Libs/1.0.0": {
+        "dependencies": {
+          "AWSSDK.DynamoDBv2": "3.3.106.7",
+          "DexpensysDev.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "DexpensysDev.Libs.dll": {}
+        },
+        "compile": {
+          "DexpensysDev.Libs.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -2126,6 +2148,16 @@
       "sha512": "sha512-9dLLuBxr5GNmOfl2jSMcsHuteEg32BEfUotmmUkmZjpR3RpVHE8YQwt0ow3p6prwA1ME8WqDVZqrr8z6H8G+Kw==",
       "path": "system.runtime.compilerservices.unsafe/4.4.0",
       "hashPath": "system.runtime.compilerservices.unsafe.4.4.0.nupkg.sha512"
+    },
+    "DexpensysDev.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DexpensysDev.Libs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",

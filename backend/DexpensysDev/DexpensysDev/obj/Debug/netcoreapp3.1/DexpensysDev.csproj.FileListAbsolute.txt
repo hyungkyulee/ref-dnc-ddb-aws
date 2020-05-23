@@ -21,3 +21,7 @@
 /Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev/obj/Debug/netcoreapp3.1/DexpensysDev.dll
 /Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev/obj/Debug/netcoreapp3.1/DexpensysDev.pdb
 /Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev/obj/Debug/netcoreapp3.1/DexpensysDev.genruntimeconfig.cache
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev/bin/Debug/netcoreapp3.1/DexpensysDev.Contracts.dll
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev/bin/Debug/netcoreapp3.1/DexpensysDev.Libs.dll
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev/bin/Debug/netcoreapp3.1/DexpensysDev.Contracts.pdb
+/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev/bin/Debug/netcoreapp3.1/DexpensysDev.Libs.pdb
