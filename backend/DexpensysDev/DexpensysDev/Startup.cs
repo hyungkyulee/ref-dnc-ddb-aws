@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 using Amazon;
 using Amazon.DynamoDBv2;
 using Amazon.Extensions.NETCore.Setup;
+using DexpensysDev.Libs.Mappers;
+using DexpensysDev.Libs.Repositories;
+using DexpensysDev.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -29,6 +32,10 @@ namespace DexpensysDev
         {
           Region = RegionEndpoint.GetBySystemName("eu-west-1")
         });
+
+      services.AddSingleton<IExpenseService, ExpenseService>();
+      services.AddSingleton<IExpenseRepository, ExpenseRepository>();
+      services.AddSingleton<IMapper, Mapper>();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

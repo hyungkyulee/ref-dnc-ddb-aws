@@ -1,13 +1,26 @@
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using DexpensysDev.Contracts;
+using DexpensysDev.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DexpensysDev.Controllers
 {
+  [Route("expenses")]
   public class ExpenseController : Controller
   {
-    // GET
-    // public IActionResult Index()
-    // {
-    //   // return View();
-    // }
+    private readonly IExpenseService _expenseService;
+
+    public ExpenseController(IExpenseService expenseService)
+    {
+      _expenseService = expenseService;
+    }
+
+    [HttpGet]
+    public async Task<IEnumerable<ExpensesResponse>> GetAllItemsFromDatabase()
+    {
+      var results = await _expenseService.GetAllItemsFromDatabase();
+      return results;
+    }
   }
 }

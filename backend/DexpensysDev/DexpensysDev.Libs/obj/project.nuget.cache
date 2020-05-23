@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Jp5Kb97+a1jU0dolhjgQHuO4BTx9oJI6D7VygtneQdcBi9MluqDlfx2Hu+zcWHwk4C+yT3DCCdHvH/9Rl+R2VQ==",
+  "dgSpecHash": "h53mz/xb5wefKT3QzR0Asbgu9hUvQySHhgF7MCtVx4zob7JdVXDQj+xpRfFe6XO0mXVBXfD8brrhBp79fqW+uA==",
   "success": true,
   "projectFilePath": "/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Libs/DexpensysDev.Libs.csproj",
   "expectedPackageFiles": [

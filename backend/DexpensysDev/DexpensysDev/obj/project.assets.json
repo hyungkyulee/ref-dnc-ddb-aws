@@ -88,6 +88,30 @@
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
+      },
+      "DexpensysDev.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/DexpensysDev.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DexpensysDev.Contracts.dll": {}
+        }
+      },
+      "DexpensysDev.Libs/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "AWSSDK.DynamoDBv2": "3.3.106.7",
+          "DexpensysDev.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DexpensysDev.Libs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DexpensysDev.Libs.dll": {}
+        }
       }
     }
   },
@@ -270,12 +294,24 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "DexpensysDev.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../DexpensysDev.Contracts/DexpensysDev.Contracts.csproj",
+      "msbuildProject": "../DexpensysDev.Contracts/DexpensysDev.Contracts.csproj"
+    },
+    "DexpensysDev.Libs/1.0.0": {
+      "type": "project",
+      "path": "../DexpensysDev.Libs/DexpensysDev.Libs.csproj",
+      "msbuildProject": "../DexpensysDev.Libs/DexpensysDev.Libs.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "AWSSDK.DynamoDBv2 >= 3.3.106.7",
-      "AWSSDK.Extensions.NETCore.Setup >= 3.3.101"
+      "AWSSDK.Extensions.NETCore.Setup >= 3.3.101",
+      "DexpensysDev.Contracts >= 1.0.0",
+      "DexpensysDev.Libs >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -301,7 +337,14 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Contracts/DexpensysDev.Contracts.csproj": {
+              "projectPath": "/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Contracts/DexpensysDev.Contracts.csproj"
+            },
+            "/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Libs/DexpensysDev.Libs.csproj": {
+              "projectPath": "/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev.Libs/DexpensysDev.Libs.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

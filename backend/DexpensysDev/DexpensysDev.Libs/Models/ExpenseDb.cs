@@ -1,7 +1,14 @@
-namespace DexpensysDev.Contracts
+using Amazon.DynamoDBv2.DataModel;
+using Amazon.DynamoDBv2.Model;
+
+namespace DexpensysDev.Libs.Models
 {
-  public class ExpensesResponse
+  [DynamoDBTable("DndExpensesDev")]
+  public class ExpenseDb
   {
+    [DynamoDBHashKey]
+    public string UserId { get; set; }
+    
     public string InvoiceKey { get; set; }
     
     public string InvoiceDate { get; set; }
