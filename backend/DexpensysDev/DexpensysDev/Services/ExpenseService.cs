@@ -15,7 +15,7 @@ namespace DexpensysDev.Services
     public ExpenseService(IExpenseRepository expenseRepository, IMapper mapper)
     {
       _expenseRepository = expenseRepository;
-      _mapper = _mapper;
+      _mapper = mapper;
     }
 
     public async Task<IEnumerable<ExpenseResponse>> GetAllItemsFromDatabase()

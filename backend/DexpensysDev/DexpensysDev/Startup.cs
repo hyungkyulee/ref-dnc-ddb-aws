@@ -23,15 +23,14 @@ namespace DexpensysDev
     // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
     public void ConfigureServices(IServiceCollection services)
     {
-      services.AddMvc();
-      // MvcOptions.EnableEndpointRouting = false;
+      services.AddMvc(options => options.EnableEndpointRouting = false);
 
       services.AddAWSService<IAmazonDynamoDB>();
-      services.AddDefaultAWSOptions(
-        new AWSOptions
-        {
-          Region = RegionEndpoint.GetBySystemName("eu-west-1")
-        });
+      // services.AddDefaultAWSOptions(
+      //   new AWSOptions
+      //   {
+      //     Region = RegionEndpoint.GetBySystemName("eu-west-1")
+      //   });
 
       services.AddSingleton<IExpenseService, ExpenseService>();
       services.AddSingleton<IExpenseRepository, ExpenseRepository>();
@@ -46,6 +45,7 @@ namespace DexpensysDev
         app.UseDeveloperExceptionPage();
       }
 
+      // ReSharper disable once MVC1005
       app.UseMvc();
       
 
