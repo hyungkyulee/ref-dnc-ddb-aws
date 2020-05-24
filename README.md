@@ -23,7 +23,7 @@ AWS :
 ### Database Model
 - Key model : Composite primary key
 - Partition Key(var: <Guid>UserId) - GUID for a user
-- Sort Key(var: <string>InvoiceKey) - Unique Invoice Name (= GUID + ItemName)
+- Sort Key(var: <string>InvoiceKey) - Unique Invoice Name (= B0001 + ItemName)
  * role as a sencondary index
 - Invoice Date(var: <string>InvoiceDate) - Date of invoice of expense
 - Payment Date(var: <string>PaymentDate) - Date of payment for remittance
@@ -183,3 +183,26 @@ Current Environment: dev
 1) Installation / Basic Setup
 - NuGet Packages -> awssdk.dynamodbv2 -> install the package to Main Project(e.g. DexpensysDev) and Libs Project(e.g. DexpensysDev.Libs)
 - NeGet Packages -> awssdk.extensions.netcore.setup -> install this to Main Project
+
+
+#### Error 
+1) Issue
+```
+fail: Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware[3]
+      The ASP.NET Core developer certificate is in an invalid state. To fix this issue, run the following commands 'dotnet dev-certs https --clean' and 'dotnet dev-certs https' to remove all existing ASP.NET Core development certificates and create a new untrusted developer certificate. On macOS or Windows, use 'dotnet dev-certs https --trust' to trust the new certificate.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+```
+ => Solution
+```
+(albert) ~/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws $ dotnet dev-certs https --trust
+A valid HTTPS certificate with a key accessible across security partitions was not found. The following command will run to fix it:
+'sudo security set-key-partition-list -D localhost -S unsigned:,teamid:UBF8T346G9'
+This command will make the certificate key accessible across security partitions and might prompt you for your password. For more information see: https://aka.ms/aspnetcore/2.1/troubleshootcertissues
+A valid HTTPS certificate with a key accessible across security partitions was not found. The following command will run to fix it:
+'sudo security set-key-partition-list -D localhost -S unsigned:,teamid:UBF8T346G9'
+This command will make the certificate key accessible across security partitions and might prompt you for your password. For more information see: https://aka.ms/aspnetcore/3.1/troubleshootcertissues
+Trusting the HTTPS development certificate was requested. If the certificate is not already trusted we will run the following command:
+'sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain <<certificate>>'
+This command might prompt you for your password to install the certificate on the system keychain.
+Password:
+```
