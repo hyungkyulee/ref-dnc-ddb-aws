@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -26,11 +27,6 @@ namespace DexpensysDev
       services.AddMvc(options => options.EnableEndpointRouting = false);
 
       services.AddAWSService<IAmazonDynamoDB>();
-      // services.AddDefaultAWSOptions(
-      //   new AWSOptions
-      //   {
-      //     Region = RegionEndpoint.GetBySystemName("eu-west-1")
-      //   });
 
       services.AddSingleton<IExpenseService, ExpenseService>();
       services.AddSingleton<IExpenseRepository, ExpenseRepository>();
