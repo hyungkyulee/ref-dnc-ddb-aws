@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ggT9IAOxx6twRvwSa+ARUmA5swykFrvvVVzA5TvBuFPO+9bHJG+q1FdG+ba+Bs4jBHwi9vgciqR6RxR54/6nsA==",
+  "dgSpecHash": "7+McRskrCWF0EjtdY5u3i6MCUp90QsI39K0WlUEQ6C1huFqICVtmmDh6ho+jlPaNlwU9yB+XDbvHiHNbQ5bG5g==",
   "success": true,
   "projectFilePath": "/Users/albert/_dev/_api/dotnetcore-dynamo-aws/ref-dnc-ddb-aws/backend/DexpensysDev/DexpensysDev/DexpensysDev.csproj",
   "expectedPackageFiles": [
-    "/Users/albert/.nuget/packages/awssdk.core/3.3.106.27/awssdk.core.3.3.106.27.nupkg.sha512",
-    "/Users/albert/.nuget/packages/awssdk.dynamodbv2/3.3.106.7/awssdk.dynamodbv2.3.3.106.7.nupkg.sha512",
+    "/Users/albert/.nuget/packages/awssdk.core/3.5.0-beta/awssdk.core.3.5.0-beta.nupkg.sha512",
+    "/Users/albert/.nuget/packages/awssdk.dynamodbv2/3.5.0-beta/awssdk.dynamodbv2.3.5.0-beta.nupkg.sha512",
     "/Users/albert/.nuget/packages/awssdk.extensions.netcore.setup/3.3.101/awssdk.extensions.netcore.setup.3.3.101.nupkg.sha512",
     "/Users/albert/.nuget/packages/microsoft.extensions.configuration.abstractions/2.0.0/microsoft.extensions.configuration.abstractions.2.0.0.nupkg.sha512",
     "/Users/albert/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/2.0.0/microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",

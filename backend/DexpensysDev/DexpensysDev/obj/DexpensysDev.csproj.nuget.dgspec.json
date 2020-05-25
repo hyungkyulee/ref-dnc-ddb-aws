@@ -90,9 +90,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AWSSDK.Core": {
+              "target": "Package",
+              "version": "[3.5.0-beta, )"
+            },
             "AWSSDK.DynamoDBv2": {
               "target": "Package",
-              "version": "[3.3.106.7, )"
+              "version": "[3.5.0-beta, )"
+            },
+            "AWSSDK.Extensions.NETCore.Setup": {
+              "target": "Package",
+              "version": "[3.3.101, )"
             }
           },
           "imports": [
@@ -153,9 +161,13 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AWSSDK.Core": {
+              "target": "Package",
+              "version": "[3.5.0-beta, )"
+            },
             "AWSSDK.DynamoDBv2": {
               "target": "Package",
-              "version": "[3.3.106.7, )"
+              "version": "[3.5.0-beta, )"
             },
             "AWSSDK.Extensions.NETCore.Setup": {
               "target": "Package",

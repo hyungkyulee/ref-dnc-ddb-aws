@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Amazon.DynamoDBv2.DocumentModel;
 using DexpensysDev.Contracts;
 using DexpensysDev.Libs.Models;
 
@@ -8,23 +9,23 @@ namespace DexpensysDev.Libs.Mappers
 {
   public class Mapper : IMapper
   {
-    public IEnumerable<ExpenseResponse> ToExpenseContract(IEnumerable<ExpenseDb> items)
+    public IEnumerable<ExpenseResponse> ToExpenseContract(IEnumerable<Document> items)
     {
       return items.Select(ToExpenseContract);
     }
 
-    public ExpenseResponse ToExpenseContract(ExpenseDb expense)
+    public ExpenseResponse ToExpenseContract(Document item)
     {
       return new ExpenseResponse
       {
-        InvoiceKey = expense.InvoiceKey,
-        PaymentDate = expense.PaymentDate,
-        FinanceStatus = expense.FinanceStatus,
-        CurrencyCode = expense.CurrencyCode,
-        Amount = expense.Amount,
-        InvoiceCategory = expense.InvoiceCategory,
-        BudgetType = expense.BudgetType,
-        Remarks = expense.Remarks
+        InvoiceKey = item["InvoiceKey"],
+        PaymentDate = item["PaymentDate"],
+        FinanceStatus = item["FinanceStatus"],
+        CurrencyCode = item["CurrencyCode"],
+        Amount = (int) item["Amount"],
+        InvoiceCategory = item["InvoiceCategory"],
+        BudgetType = item["BudgetType"],
+        Remarks = item["Remarks"]
       };
     }
   }

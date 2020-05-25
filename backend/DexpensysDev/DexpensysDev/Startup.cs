@@ -25,7 +25,8 @@ namespace DexpensysDev
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddMvc(options => options.EnableEndpointRouting = false);
-
+      
+      
       services.AddAWSService<IAmazonDynamoDB>();
 
       services.AddSingleton<IExpenseService, ExpenseService>();
