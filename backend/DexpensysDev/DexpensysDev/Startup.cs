@@ -28,6 +28,13 @@ namespace DexpensysDev
       
       
       services.AddAWSService<IAmazonDynamoDB>();
+      services.AddDefaultAWSOptions(
+        new AWSOptions
+        {
+          Region = RegionEndpoint.GetBySystemName("eu-west-1"),
+          Profile = "dintentdev"
+        });
+      // services.AddDefaultAWSOptions(Configuration.GetAWSOptions())
 
       services.AddSingleton<IExpenseService, ExpenseService>();
       services.AddSingleton<IExpenseRepository, ExpenseRepository>();
