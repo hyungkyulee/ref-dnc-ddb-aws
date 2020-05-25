@@ -4,13 +4,30 @@ using System.Threading.Tasks;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 using Amazon.DynamoDBv2.DocumentModel;
+using Amazon.DynamoDBv2.Model;
 using DexpensysDev.Libs.Models;
 
 namespace DexpensysDev.Libs.Repositories
 {
   public class ExpenseRepository : IExpenseRepository
   {
-    /* // ---------- Object Persistence Model */
+    /* // ---------- Low-level Model */
+    private const string TableName = "DndExpensesDev";
+    private readonly IAmazonDynamoDB _dynamoDbClient;
+
+    public ExpenseRepository(IAmazonDynamoDB dynamoDbClient)
+    {
+      _dynamoDbClient = dynamoDbClient;
+    }
+
+    public async Task<ScanResponse> GetAllItems()
+    {
+      var scanRequest = new ScanRequest(TableName);
+      return await _dynamoDbClient.ScanAsync(scanRequest);
+    }
+    
+    
+    /* // ---------- Document Model 
     private const string TableName = "DndExpensesDev";
     private readonly Table _table;
 
@@ -24,6 +41,7 @@ namespace DexpensysDev.Libs.Repositories
       var config = new ScanOperationConfig();
       return await _table.Scan(config).GetRemainingAsync();
     }
+    ----------------- */
     
     /* // ---------- Object Persistence Model 
     private readonly DynamoDBContext _context;
