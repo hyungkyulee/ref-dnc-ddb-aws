@@ -31,6 +31,21 @@ namespace DexpensysDev.Libs.Mappers
         Remarks = item["Remarks"].S
       };
     }
+    
+    public ExpenseResponse ToExpenseContract(GetItemResponse response)
+    {
+      return new ExpenseResponse
+      {
+        InvoiceKey = response.Item["InvoiceKey"].S,
+        PaymentDate = response.Item["PaymentDate"].S,
+        FinanceStatus = response.Item["FinanceStatus"].S,
+        CurrencyCode = response.Item["CurrencyCode"].S,
+        Amount = Convert.ToInt32(response.Item["Amount"].N),
+        InvoiceCategory = response.Item["InvoiceCategory"].S,
+        BudgetType = response.Item["BudgetType"].S,
+        Remarks = response.Item["Remarks"].S
+      };
+    }
 
 
     /* // ---------- Document Model 

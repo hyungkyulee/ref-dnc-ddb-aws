@@ -11,11 +11,12 @@ namespace DexpensysDev.Libs.Repositories
   {
     /* // ---------- Low-level Model */
     Task<ScanResponse> GetAllItems();
+    Task<GetItemResponse> GetExpense(string userId, string invoiceKey);
 
     /* // ---------- Document Model 
     Task<IEnumerable<Document>> GetAllItems();
     ----------------- */
-    
+
     /* // ---------- Object Persistence Model
     Task<IEnumerable<ExpenseDb>> GetAllItems();
     ----------------- */

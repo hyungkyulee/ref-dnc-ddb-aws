@@ -23,5 +23,11 @@ namespace DexpensysDev.Services
       var response = await _expenseRepository.GetAllItems();
       return _mapper.ToExpenseContract(response);
     }
+    
+    public async Task<ExpenseResponse> GetExpense(string userId, string invoiceKey)
+    {
+      var response = await _expenseRepository.GetExpense(userId, invoiceKey);
+      return _mapper.ToExpenseContract(response);
+    }
   }
 }

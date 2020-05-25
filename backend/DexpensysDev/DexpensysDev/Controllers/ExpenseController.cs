@@ -22,5 +22,13 @@ namespace DexpensysDev.Controllers
       var results = await _expenseService.GetAllItemsFromDatabase();
       return results;
     }
+
+    [HttpGet]
+    [Route("{userId}/{invoiceKey}")]
+    public async Task<ExpenseResponse> GetExpense(string userId, string invoiceKey)
+    {
+      var result = await _expenseService.GetExpense(userId, invoiceKey);
+      return result;
+    }
   }
 }

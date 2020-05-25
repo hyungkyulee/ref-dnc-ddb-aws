@@ -12,7 +12,8 @@ namespace DexpensysDev.Libs.Mappers
     /* // ---------- Low-level Model */
     IEnumerable<ExpenseResponse> ToExpenseContract(ScanResponse response);
     ExpenseResponse ToExpenseContract(Dictionary<string, AttributeValue> item);
-    
+    ExpenseResponse ToExpenseContract(GetItemResponse response);
+
     /* // ---------- Document Model
     IEnumerable<ExpenseResponse> ToExpenseContract(IEnumerable<Document> items);
     ExpenseResponse ToExpenseContract(Document item);

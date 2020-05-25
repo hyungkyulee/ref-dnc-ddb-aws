@@ -25,7 +25,20 @@ namespace DexpensysDev.Libs.Repositories
       var scanRequest = new ScanRequest(TableName);
       return await _dynamoDbClient.ScanAsync(scanRequest);
     }
-    
+
+    public async Task<GetItemResponse> GetExpense(string userId, string invoiceKey)
+    {
+      var request = new GetItemRequest
+      {
+        TableName = TableName,
+        Key = new Dictionary<string, AttributeValue>
+        {
+          {"UserId", new AttributeValue {S = userId}},
+          {"InvoiceKey", new AttributeValue {S = invoiceKey}}
+        }
+      };
+      return await _dynamoDbClient.GetItemAsync(request);
+    }
     
     /* // ---------- Document Model 
     private const string TableName = "DndExpensesDev";
