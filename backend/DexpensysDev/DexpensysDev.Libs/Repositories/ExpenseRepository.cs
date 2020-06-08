@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -5,6 +6,7 @@ using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 using Amazon.DynamoDBv2.DocumentModel;
 using Amazon.DynamoDBv2.Model;
+using DexpensysDev.Contracts;
 using DexpensysDev.Libs.Models;
 
 namespace DexpensysDev.Libs.Repositories
@@ -39,7 +41,30 @@ namespace DexpensysDev.Libs.Repositories
       };
       return await _dynamoDbClient.GetItemAsync(request);
     }
-    
+
+    public async Task AddExpense(string userId, ExpenseDateRequest expenseDateRequest)
+    {
+      var request = new PutItemRequest
+      {
+        TableName = TableName,
+        Item = new Dictionary<string, AttributeValue>
+        {
+          {"UserId", new AttributeValue {S = userId}},
+          {"InvoiceKey", new AttributeValue {S = expenseDateRequest.InvoiceKey}},
+          {"InvoiceDate", new AttributeValue {S = DateTime.UtcNow.ToString()}},
+          {"PaymentDate", new AttributeValue {S = DateTime.UtcNow.ToString()}},
+          {"FinanceStatus", new AttributeValue {S = expenseDateRequest.FinanceStatus}},
+          {"CurrencyCode", new AttributeValue {S = expenseDateRequest.CurrencyCode}},
+          {"Amount", new AttributeValue {N = expenseDateRequest.Amount.ToString()}},
+          {"InvoiceCategory", new AttributeValue {S = expenseDateRequest.InvoiceCategory}},
+          {"BudgetType", new AttributeValue {S = expenseDateRequest.BudgetType}},
+          {"Remarks", new AttributeValue {S = expenseDateRequest.Remarks}},
+        }
+      };
+
+      await _dynamoDbClient.PutItemAsync(request);
+    }
+
     /* // ---------- Document Model 
     private const string TableName = "DndExpensesDev";
     private readonly Table _table;

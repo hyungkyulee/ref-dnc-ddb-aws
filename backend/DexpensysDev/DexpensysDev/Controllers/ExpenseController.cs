@@ -30,5 +30,21 @@ namespace DexpensysDev.Controllers
       var result = await _expenseService.GetExpense(userId, invoiceKey);
       return result;
     }
+
+    [HttpPost]
+    [Route("{userId}")]
+    public async Task<IActionResult> AddExpense(string userId, [FromBody] ExpenseDateRequest request)
+    {
+      await _expenseService.AddExpense(userId, request);
+      return Ok();
+    }
+    
+    // [HttpPatch]
+    // [Route("{userId}")]
+    // public async Task<IActionResult> UpdateExpense(string userId, [FromBody] ExpenseUpdateRequest request)
+    // {
+    //   await _expenseService.UpdateExpense(userId, request);
+    //   return Ok();
+    // }
   }
 }

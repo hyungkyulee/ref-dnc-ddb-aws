@@ -8,5 +8,9 @@ namespace DexpensysDev.Services
   {
     Task<IEnumerable<ExpenseResponse>> GetAllItemsFromDatabase();
     Task<ExpenseResponse> GetExpense(string userId, string invoiceKey);
+
+    Task AddExpense(string userId, ExpenseDateRequest expenseDateRequest);
+
+    // Task UpdateExpense(string userId, ExpenseUpdateRequest updateRequest);
   }
 }
