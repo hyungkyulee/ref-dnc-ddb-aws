@@ -14,6 +14,7 @@ namespace DexpensysDev.Libs.Repositories
     Task<ScanResponse> GetAllItems();
     Task<GetItemResponse> GetExpense(string userId, string invoiceKey);
     Task AddExpense(string userId, ExpenseDateRequest expenseDateRequest);
+    Task UpdateExpense(string userId, ExpenseUpdateRequest updateRequest);
 
     /* // ---------- Document Model 
     Task<IEnumerable<Document>> GetAllItems();

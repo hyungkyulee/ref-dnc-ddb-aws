@@ -11,6 +11,6 @@ namespace DexpensysDev.Services
 
     Task AddExpense(string userId, ExpenseDateRequest expenseDateRequest);
 
-    // Task UpdateExpense(string userId, ExpenseUpdateRequest updateRequest);
+    Task UpdateExpense(string userId, ExpenseUpdateRequest updateRequest);
   }
 }

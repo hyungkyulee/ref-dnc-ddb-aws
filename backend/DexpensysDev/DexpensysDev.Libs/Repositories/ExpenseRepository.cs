@@ -65,6 +65,80 @@ namespace DexpensysDev.Libs.Repositories
       await _dynamoDbClient.PutItemAsync(request);
     }
 
+    public async Task UpdateExpense(string userId, ExpenseUpdateRequest updateRequest)
+    {
+      var request = new UpdateItemRequest
+      {
+        TableName = TableName,
+        Key = new Dictionary<string, AttributeValue>
+        {
+          {"UserId", new AttributeValue {S = userId}},
+          {"InvoiceKey", new AttributeValue {S = updateRequest.InvoiceKey}}
+        },
+        AttributeUpdates = new Dictionary<string, AttributeValueUpdate>
+        {
+          {
+            "InvoiceDate", new AttributeValueUpdate
+            {
+              Action = AttributeAction.PUT,
+              Value = new AttributeValue {S = DateTime.UtcNow.ToString()}
+            }
+          },
+          {
+            "PaymentDate", new AttributeValueUpdate
+            {
+              Action = AttributeAction.PUT,
+              Value = new AttributeValue {S = DateTime.UtcNow.ToString()}
+            }
+          },
+          {
+            "FinanceStatus", new AttributeValueUpdate
+            {
+              Action = AttributeAction.PUT,
+              Value = new AttributeValue {S = updateRequest.FinanceStatus}
+            }
+          },
+          {
+            "CurrencyCode", new AttributeValueUpdate
+            {
+              Action = AttributeAction.PUT,
+              Value = new AttributeValue {S = updateRequest.CurrencyCode}
+            }
+          },
+          {
+            "Amount", new AttributeValueUpdate
+            {
+              Action = AttributeAction.PUT,
+              Value = new AttributeValue {N = updateRequest.Amount.ToString()}
+            }
+          },
+          {
+            "InvoiceCategory", new AttributeValueUpdate
+            {
+              Action = AttributeAction.PUT,
+              Value = new AttributeValue {S = updateRequest.InvoiceCategory}
+            }
+          },
+          {
+            "BudgetType", new AttributeValueUpdate
+            {
+              Action = AttributeAction.PUT,
+              Value = new AttributeValue {S = updateRequest.BudgetType}
+            }
+          },
+          {
+            "Remarks", new AttributeValueUpdate
+            {
+              Action = AttributeAction.PUT,
+              Value = new AttributeValue {S = updateRequest.Remarks}
+            }
+          },
+        }
+      };
+
+      await _dynamoDbClient.UpdateItemAsync(request);
+    }
+
     /* // ---------- Document Model 
     private const string TableName = "DndExpensesDev";
     private readonly Table _table;

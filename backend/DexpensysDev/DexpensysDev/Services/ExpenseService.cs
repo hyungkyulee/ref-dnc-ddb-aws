@@ -35,9 +35,9 @@ namespace DexpensysDev.Services
       await _expenseRepository.AddExpense(userId, expenseDateRequest);
     }
     
-    // public async Task UpdateExpense(string userId, ExpenseUpdateRequest updateRequest)
-    // {
-    //   await _expenseRepository.UpdateExpense(userId, updateRequest);
-    // }
+    public async Task UpdateExpense(string userId, ExpenseUpdateRequest updateRequest)
+    {
+      await _expenseRepository.UpdateExpense(userId, updateRequest);
+    }
   }
 }
