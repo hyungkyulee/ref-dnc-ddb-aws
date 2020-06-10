@@ -39,12 +39,12 @@ namespace DexpensysDev.Controllers
       return Ok();
     }
     
-    // [HttpPatch]
-    // [Route("{userId}")]
-    // public async Task<IActionResult> UpdateExpense(string userId, [FromBody] ExpenseUpdateRequest request)
-    // {
-    //   await _expenseService.UpdateExpense(userId, request);
-    //   return Ok();
-    // }
+    [HttpPatch]
+    [Route("{userId}")]
+    public async Task<IActionResult> UpdateExpense(string userId, [FromBody] ExpenseUpdateRequest request)
+    {
+      await _expenseService.UpdateExpense(userId, request);
+      return Ok();
+    }
   }
 }
