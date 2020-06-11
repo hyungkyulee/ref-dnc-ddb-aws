@@ -13,6 +13,7 @@ namespace DexpensysDev.Libs.Repositories
     /* // ---------- Low-level Model */
     Task<ScanResponse> GetAllItems();
     Task<GetItemResponse> GetExpense(string userId, string invoiceKey);
+    Task<QueryResponse> GetInvoiceDate(string invoiceKey);
     Task AddExpense(string userId, ExpenseDateRequest expenseDateRequest);
     Task UpdateExpense(string userId, ExpenseUpdateRequest updateRequest);
 

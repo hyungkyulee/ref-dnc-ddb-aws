@@ -42,6 +42,21 @@ namespace DexpensysDev.Libs.Repositories
       return await _dynamoDbClient.GetItemAsync(request);
     }
 
+    public async Task<QueryResponse> GetInvoiceDate(string invoiceKey)
+    {
+      var request = new QueryRequest
+      {
+        TableName = TableName,
+        IndexName = "InvoiceKey-index",
+        KeyConditionExpression = "InvoiceKey = :invoiceKey",
+        ExpressionAttributeValues = new Dictionary<string, AttributeValue>
+        {
+          {":invoiceKey", new AttributeValue {S = invoiceKey}}
+        }
+      };
+      return await _dynamoDbClient.QueryAsync(request);
+    }
+
     public async Task AddExpense(string userId, ExpenseDateRequest expenseDateRequest)
     {
       var request = new PutItemRequest
