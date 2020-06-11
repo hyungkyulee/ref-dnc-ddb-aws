@@ -31,6 +31,14 @@ namespace DexpensysDev.Controllers
       return result;
     }
 
+    [HttpGet]
+    [Route("{InvoiceKey}/InvoiceDate")]
+    public async Task<ExpenseDateResponse> GetInvoiceDate(string invoiceKey)
+    {
+      var result = await _expenseService.GetInvoiceDate(invoiceKey);
+      return result;
+    }
+
     [HttpPost]
     [Route("{userId}")]
     public async Task<IActionResult> AddExpense(string userId, [FromBody] ExpenseDateRequest request)
