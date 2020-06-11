@@ -30,6 +30,16 @@ namespace DexpensysDev.Services
       return _mapper.ToExpenseContract(response);
     }
 
+    public async Task<ExpenseDateResponse> GetInvoiceDate(string invoiceKey)
+    {
+      var response = await _expenseRepository.GetInvoiceDate(invoiceKey);
+
+      return new ExpenseDateResponse
+      {
+        InvoiceKey = invoiceKey,
+      };
+    }
+    
     public async Task AddExpense(string userId, ExpenseDateRequest expenseDateRequest)
     {
       await _expenseRepository.AddExpense(userId, expenseDateRequest);
