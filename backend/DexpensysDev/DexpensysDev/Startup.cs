@@ -38,6 +38,7 @@ namespace DexpensysDev
       services.AddSingleton<IExpenseService, ExpenseService>();
       services.AddSingleton<IExpenseRepository, ExpenseRepository>();
       services.AddSingleton<IMapper, Mapper>();
+      services.AddSingleton<ISetupService, SetupService>();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

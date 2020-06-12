@@ -24,5 +24,6 @@ namespace DexpensysDev.Libs.Repositories
     /* // ---------- Object Persistence Model
     Task<IEnumerable<ExpenseDb>> GetAllItems();
     ----------------- */
+    Task CreateDynamoDbTable(string tableName);
   }
 }

@@ -182,5 +182,35 @@ namespace DexpensysDev.Libs.Repositories
       return await _context.ScanAsync<ExpenseDb>(new List<ScanCondition>()).GetRemainingAsync();
     }
     ----------------- */
+
+    public async Task CreateDynamoDbTable(string tableName)
+    {
+      var request = new CreateTableRequest
+      {
+        TableName = tableName,
+        AttributeDefinitions = new List<AttributeDefinition>()
+        {
+          new AttributeDefinition
+          {
+            AttributeName = "Id",
+            AttributeType = "N"
+          }
+        },
+        KeySchema = new List<KeySchemaElement>()
+        {
+          new KeySchemaElement
+          {
+            AttributeName = "Id",
+            KeyType = "HASH"
+          },
+          ProvisionedThroughput = new ProvisionedThroughput
+          {
+            ReadCapacityUnits = 1,
+            WriteCapacityUnits = 1
+          }
+        }
+      };
+      await _dynamoDbClient.CreateTableAsync(request);
+    }
   }
 }
