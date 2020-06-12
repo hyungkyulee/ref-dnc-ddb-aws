@@ -202,12 +202,12 @@ namespace DexpensysDev.Libs.Repositories
           {
             AttributeName = "Id",
             KeyType = "HASH"
-          },
-          ProvisionedThroughput = new ProvisionedThroughput
-          {
+          }
+        },
+        ProvisionedThroughput = new ProvisionedThroughput
+        {
             ReadCapacityUnits = 1,
             WriteCapacityUnits = 1
-          }
         }
       };
       await _dynamoDbClient.CreateTableAsync(request);

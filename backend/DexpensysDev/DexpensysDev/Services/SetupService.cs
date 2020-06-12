@@ -3,7 +3,7 @@ using DexpensysDev.Libs.Repositories;
 
 namespace DexpensysDev.Services
 {
-  public class SetupService
+  public class SetupService : ISetupService
   {
     private readonly IExpenseRepository _expenseRepository;
 
