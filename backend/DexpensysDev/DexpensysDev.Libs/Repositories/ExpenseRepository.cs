@@ -212,5 +212,15 @@ namespace DexpensysDev.Libs.Repositories
       };
       await _dynamoDbClient.CreateTableAsync(request);
     }
+
+    public async Task DeleteDynamoDbTable(string tableName)
+    {
+      var request = new DeleteTableRequest
+      {
+        TableName = tableName
+      };
+
+      await _dynamoDbClient.DeleteTableAsync(request);
+    }
   }
 }

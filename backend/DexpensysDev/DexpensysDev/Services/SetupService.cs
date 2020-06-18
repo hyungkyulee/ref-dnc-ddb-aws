@@ -16,5 +16,10 @@ namespace DexpensysDev.Services
     {
       await _expenseRepository.CreateDynamoDbTable(dynamoDbTableName);
     }
+
+    public async Task DeleteDynamoDbTable(string dynamoDbTableName)
+    {
+      await _expenseRepository.DeleteDynamoDbTable(dynamoDbTableName);
+    }
   }
 }

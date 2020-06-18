@@ -25,5 +25,7 @@ namespace DexpensysDev.Libs.Repositories
     Task<IEnumerable<ExpenseDb>> GetAllItems();
     ----------------- */
     Task CreateDynamoDbTable(string tableName);
+
+    Task DeleteDynamoDbTable(string tableName);
   }
 }

@@ -21,5 +21,13 @@ namespace DexpensysDev.Controllers
       await _setupService.CreateDynamoDbTable(dynamoDbTableName);
       return Ok();
     }
+
+    [HttpDelete]
+    [Route("deleteTable/{dynamoDbTableName}")]
+    public async Task<IActionResult> DeleteTable(string dynamoDbTableName)
+    {
+      await _setupService.DeleteDynamoDbTable(dynamoDbTableName);
+      return Ok();
+    }
   }
 }
